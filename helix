@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> JULEGAVE</title>
+        <link rel="stylesheet" href="gave.css">
+    </head>
+
+<body>
+
+    <div class="helix-container">
+        <img src="bilder/helix.jpg" alt="Julegave" class="hero-img-helix">
+        <p class="helix-text">Spons på 500kr for helixpiercing!!</p>
+
+        <div class="stjerne st1"><img src="bilder/stjerne.png" alt=""></div>
+        <div class="stjerne st2"><img src="bilder/stjerne.png" alt=""></div>
+        <div class="stjerne st3"><img src="bilder/stjerne.png" alt=""></div>
+        <div class="stjerne st4"><img src="bilder/stjerne.png" alt=""></div>
+        <div class="stjerne st5"><img src="bilder/stjerne.png" alt=""></div>
+    </div>
+          
+ 
+</body>
+
+</html>
