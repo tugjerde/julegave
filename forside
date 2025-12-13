@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> JULEGAVE</title>
+        <link rel="stylesheet" href="gave.css">
+    </head>
+
+<body>
+
+    <div class="hero">
+        <img src="bilder/peis-jul.jpg" alt="Julegave" class="hero-img">
+        <h1 class="hero-title">GOD JUL JAKOB!</h1>
+        <button class="prouct" onclick="document.location='helix.html'"> Trykk her for å se gaven!!! </button>
+    </div>
+          
+ 
+</body>
+
+</html>
+
