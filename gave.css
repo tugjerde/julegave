@@ -32,10 +32,12 @@ body, html {
 
 .hero-title {
     color: red;
-    font-size: 8rem;
+    font-size: clamp(2.5rem, 10vw, 6rem);
     text-align: center;
     text-shadow: 2px 2px 4px black;
     margin-bottom: 20px;
+    padding: 0 1rem;
+    line-height: 1.1;
 }
 
 
@@ -140,3 +142,39 @@ body, html {
 .st8  { top: 75%; left: 20%; animation-delay: 2.2s; }
 .st9  { top: 78%; left: 60%; animation-delay: 0.3s; }
 .st10 { top: 82%; left: 88%; animation-delay: 1.3s; }
+
+
+body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.hero,
+.helix-container {
+    min-height: 100svh;
+}
+.hero-title,
+.helix-text {
+    max-width: 90vw;
+    word-wrap: break-word;
+}
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .prouct {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .stjerne {
+        width: 70px;
+        height: 70px;
+    }
+
+    .helix-text {
+        -webkit-text-stroke: 1.5px red;
+        font-size: clamp(1.6rem, 7vw, 2.6rem);
+    }
+}
