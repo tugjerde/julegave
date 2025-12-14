@@ -8,12 +8,16 @@ body, html {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100svh;
     overflow: hidden;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: env(safe-area-inset-top) 1rem env(safe-area-inset-bottom);
+    text-align: center;
 }
 
 .hero-img {
@@ -33,11 +37,11 @@ body, html {
 .hero-title {
     color: red;
     font-size: clamp(2.5rem, 10vw, 6rem);
-    text-align: center;
     text-shadow: 2px 2px 4px black;
-    margin-bottom: 20px;
-    padding: 0 1rem;
-    line-height: 1.1;
+    line-height: 1.15;
+
+    padding: 0.5rem 1.5rem;
+    max-width: 100%;
 }
 
 
@@ -82,23 +86,27 @@ body, html {
 .helix-container {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    min-height: 100svh;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: env(safe-area-inset-top) 1rem env(safe-area-inset-bottom);
 }
 
 .helix-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: clamp(1.8rem, 6vw, 3.5rem);
+    font-size: clamp(1.8rem, 7vw, 3.5rem);
     font-weight: bold;
     color: black;
-    -webkit-text-stroke: 2px red;
-    text-align: center;
-    z-index: 5;
-    padding: 10px;
 
+    -webkit-text-stroke: 2px red;
+
+    text-align: center;
+    max-width: 90vw;
+    padding: 1rem;
+    z-index: 5;
 }
 .center {
     display: flex;
@@ -152,11 +160,12 @@ body {
 .helix-container {
     min-height: 100svh;
 }
+
 .hero-title,
 .helix-text {
-    max-width: 90vw;
-    word-wrap: break-word;
+    box-sizing: border-box;
 }
+
 @media (max-width: 768px) {
 
     .hero {
